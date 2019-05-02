@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>五子棋</title>
+</head>
+
+<body>
+	<canvas id="chess" width="500" height="500">该游览器不支持canvas</canvas>
+    <script>
+		var ctx=chess.getContext('2d');
+		var grad=ctx.createRadialGradient(200,200,30,190,190,0);
+		grad.addColorStop(0,'#000');
+		grad.addColorStop(1,'#ccc');
+		ctx.fillStyle=grad;
+		ctx.beginPath();
+		ctx.arc(200,200,30,0,2*Math.PI);
+		ctx.stroke();
+		ctx.fill();
+		
+		var ctx=chess.getContext('2d');
+		var grad=ctx.createRadialGradient(100,100,30,90,90,5);
+		grad.addColorStop(0,'#e8eaea');
+		grad.addColorStop(1,'white');
+		ctx.fillStyle=grad;
+		ctx.beginPath();
+		ctx.arc(100,100,30,0,2*Math.PI);
+		ctx.stroke();
+		ctx.fill();
+		
+		
+		
+	</script>
+</body>
+</html>
